@@ -1,0 +1,319 @@
+/***************************************
+GENERAL
+***************************************/
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+/***************************************
+HEADING
+***************************************/
+
+header {
+	padding: 5px 0 0 0;
+	width 100%;
+}
+
+#logo {
+	margin: 0;
+}
+
+h1 {
+	margin: 10px 0 0 10px;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 0.8em;
+	display: inline-block;
+}
+
+
+
+
+
+
+/***************************************
+NAVIGATION
+***************************************/
+
+nav {
+  padding: 10px;
+  margin: 10px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  font-weight: 600;
+  padding: 20px 15px;
+}
+
+
+
+
+/***************************************
+PAGE: MAIN
+***************************************/
+#mainp p {
+	text-align: left;
+	margin: 30px 0 10px 30px;
+}
+
+
+/***************************************
+PAGE: ABOUT
+***************************************/
+#about p {
+	text-align: left;
+	width: 50%;
+	margin: 30px 0 10px 30px;
+}
+
+#faq h2 {
+	text-align: left;
+	width: 50%;
+	margin: 30px 0 10px 30px;
+}
+
+#faq p {
+	text-align: left;
+	width: 50%;
+	margin: 30px 0 10px 60px;
+}
+
+.tab-group {
+  margin: 0 auto;
+  max-width: 40em;
+  width: 100%;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+
+.tab label {
+  background: #72d2c6;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding-left: .5em;
+  margin-bottom: .5em;
+  transition: letter-spacing .55s;
+}
+
+.tab input:focus + label
+.tab label:hover {
+  background: #85D8CE;
+  letter-spacing: 1px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 6.25em;
+}
+
+/***************************************
+PAGE: RSVP
+***************************************/
+
+
+
+/***************************************
+PAGE: CHARITY
+***************************************/
+#FCPinfo {
+	float: left;
+	width: 30%;
+	margin: 30px 0 30px 30px;
+}
+
+span a {
+	text-decoration: none;
+	color: blue;
+}
+
+#FCPlogo {
+	width: 20%;
+	margin: 30px 0 30px 0;
+}
+
+
+/***************************************
+PAGE: CONTACT
+***************************************/
+#contactinfo p {
+	text-align: left;
+	margin: 30px 0 10px 30px;
+
+}
+
+
+
+/***************************************
+FOOTER
+***************************************/
+
+footer {
+	text-align: center;
+	font-size: .75em;
+	margin-top: 50px;
+	clear: both;
+}
+
+
+/***************************************
+COLORS
+***************************************/
+
+body {
+  background-color: #F5DEB3;
+  color: black;
+}
+
+header {
+    background-color: #000;
+	color: white;
+}
+
+/* links */
+a {
+  color: #fff;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #ff6633; 
+}
+
+
+/*************************
+Media Queries
+
+
+@media only screen and (min-width: 480px) {
+
+  nav a {
+    float: left;
+    width: 30%;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 38%;
+  }
+  
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 25px 1%;
+  }
+  
+}
+*************************/
+
+/*************************
+Clearfix
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+*************************/
