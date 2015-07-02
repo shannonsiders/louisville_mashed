@@ -6,6 +6,11 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -24,13 +29,12 @@ HEADING
 
 header {
   float: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 	width: 100%;
 }
 
 #logo {
   text-align: center;
-  margin: 0;
 }
 
 h1 {
@@ -76,23 +80,40 @@ PAGE: MAIN
 ***************************************/
 #mainp p {
 	text-align: left;
-	margin: 30px 0 10px 30px;
 }
 
 
 /***************************************
 PAGE: ABOUT
 ***************************************/
+#founders img {
+  border-radius: 80px;
+  float: right;
+  width: 30%;
+}
+
 #about p {
 	text-align: left;
 	width: 50%;
-	margin: 30px 0 10px 30px;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+#question {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#goals {
+  margin: 40px;
+  width: 50%;
 }
 
 #faq h2 {
 	text-align: left;
 	width: 50%;
-	margin: 30px 0 10px 30px;
 }
 
 .tab-group {
@@ -145,7 +166,7 @@ PAGE: ABOUT
 }
 
 /***************************************
-PAGE: RSVP
+PAGE: SPONSOR
 ***************************************/
 
 
@@ -156,27 +177,26 @@ PAGE: CHARITY
 #FCPinfo {
 	float: left;
 	width: 30%;
-	margin: 30px 0 30px 30px;
+}
+
+#FCPinfo p {
+  line-height: 1.5;
+  margin-bottom: 2em;
 }
 
 span a {
-	text-decoration: none;
-	color: blue;
+	color: black;
 }
 
 #FCPlogo {
-	width: 20%;
-	margin: 30px 0 30px 0;
+	width: 30%;
 }
 
 
 /***************************************
 PAGE: CONTACT
 ***************************************/
-#contactinfo p {
-	text-align: left;
-	margin: 30px 0 10px 30px;
-}
+
 
 
 
@@ -211,6 +231,7 @@ a {
   color: #fff;
 }
 
+
 /* nav link */
 nav a, nav a:visited {
   color: #fff;
@@ -218,97 +239,5 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #ff6633; 
+  color: yellow; 
 }
-
-
-/*************************
-Media Queries
-
-
-@media only screen and (min-width: 480px) {
-
-  nav a {
-    float: left;
-    width: 30%;
-    margin: 0 0 0 5%;
-    padding: 25px 1%;
-    margin-bottom: 0;
-  }
-
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  nav li:last-child a {
-    margin-right: 0;
-  }
-
-}
-
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
-
-  .title {
-    float: left;
-    font-size: 1.4em;
-  }
-
-  nav {
-    float: right;
-    width: 60%;
-  }
-
-  nav a {
-    padding: 15px 1%;
-  }
-
-  .main article {
-    float: left;
-    width: 57%;
-  }
-
-  .main aside {
-    float: right;
-    width: 38%;
-  }
-  
-}
-
-@media only screen and (min-width: 1140px) {
-
-  .wrapper {
-    width: 1026px;
-    margin: 0 auto;
-  }
-
-  .title {
-    font-size: 2em;
-  }
-
-  nav a {
-    padding: 25px 1%;
-  }
-  
-}
-*************************/
-
-/*************************
-Clearfix
-
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-*************************/
