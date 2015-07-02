@@ -4,7 +4,12 @@ GENERAL
 
 body {
 	font-family: Arial, sans-serif;
-	margin: 0;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10%;
 }
 
 a {
@@ -13,31 +18,28 @@ a {
 
 
 
-
-
 /***************************************
 HEADING
 ***************************************/
 
 header {
-	padding: 5px 0 0 0;
-	width 100%;
+  float: left;
+  margin: 0 0 20px 0;
+	width: 100%;
 }
 
 #logo {
-	margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
 h1 {
-	margin: 10px 0 0 10px;
-	font-size: 3em;
-	font-weight: bold;
-	line-height: 0.8em;
-	display: inline-block;
+  font-family: 'Nothing You Could Do', cursive;
+  margin: 15px, 0;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 0.8em;
 }
-
-
-
 
 
 
@@ -46,24 +48,24 @@ NAVIGATION
 ***************************************/
 
 nav {
-  padding: 10px;
-  margin: 10px 0 0;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
 }
 
 nav ul {
   list-style: none;
   margin: 0 10px;
   padding: 0;
-  text-align: right;
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
 }
 
 nav a {
   font-weight: 600;
-  padding: 20px 15px;
+  padding: 15px 10px;
 }
 
 
@@ -174,7 +176,6 @@ PAGE: CONTACT
 #contactinfo p {
 	text-align: left;
 	margin: 30px 0 10px 30px;
-
 }
 
 
@@ -201,7 +202,7 @@ body {
 }
 
 header {
-    background-color: #000;
+  background-color: #000;
 	color: white;
 }
 
