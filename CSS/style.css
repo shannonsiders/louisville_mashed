@@ -209,6 +209,11 @@ footer {
 	font-size: .75em;
 	margin-top: 50px;
 	clear: both;
+  color: #c0c0c0;
+}
+
+#shannon a {
+  color: #c0c0c0;
 }
 
 
@@ -227,7 +232,7 @@ header {
 }
 
 /* links */
-a {
+nav a {
   color: #fff;
 }
 
