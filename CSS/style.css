@@ -1,6 +1,23 @@
+
+body {
+  padding-top: 85px;
+}
+.container {
+  max-width: 1000px;
+}
+.main_img {
+  max-width: 80%;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+
+
+
+/***BEGIN OLD CSS FILES***/
 /***************************************
 GENERAL
-***************************************/
+
 
 * {
   margin: 0;
@@ -23,9 +40,9 @@ a {
 
 
 
-/***************************************
+
 HEADING
-***************************************/
+
 
 header {
   float: left;
@@ -48,9 +65,9 @@ h1 {
 
 
 
-/***************************************
+
 NAVIGATION
-***************************************/
+
 
 nav {
   text-align: center;
@@ -74,9 +91,9 @@ nav a {
 
 
 
-/***************************************
+
 PAGE: MAIN
-***************************************/
+
 #mainp p {
 	
 }
@@ -84,7 +101,7 @@ PAGE: MAIN
 
 /***************************************
 PAGE: ABOUT
-***************************************/
+
 #founders img {
   border-radius: 80px;
   float: right;
@@ -172,7 +189,7 @@ PAGE: SPONSOR
 
 /***************************************
 PAGE: CHARITY
-***************************************/
+
 #FCPinfo {
 	float: left;
 	width: 30%;
@@ -201,7 +218,7 @@ PAGE: CONTACT
 
 /***************************************
 FOOTER
-***************************************/
+
 
 footer {
 	text-align: center;
@@ -218,7 +235,7 @@ footer {
 
 /***************************************
 COLORS
-***************************************/
+
 
 body {
   background-color: #F5DEB3;
@@ -230,18 +247,18 @@ header {
 	color: white;
 }
 
-/* links */
+/* links 
 nav a {
   color: #fff;
 }
 
 
-/* nav link */
+/* nav link 
 nav a, nav a:visited {
   color: #fff;
 }
 
-/* selected nav link */
+/* selected nav link 
 nav a.selected, nav a:hover {
   color: yellow; 
 }
