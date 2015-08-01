@@ -3,50 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Louisville Mashed</title>
+    <!--Comment out old CSS documents to make room for bootstrap
     <link rel="stylesheet" href="css/normalize.css">
-    <!--Insert Link for Fonts-->
+    <link rel="stylesheet" href="css/style.css">
+    -->
+    <!--Insert Link for Fonts
     <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Louisville Mashed</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="about.html" class="selected">About</a></li>
-          <li><a href="charity.html">Charity</a></li>
-          <li><a href="sponsor.html">Sponsor</a></li>
-          <li><a href="contact.html">Contact</a></li>  
-        </ul>
-      </nav>
-     </div>
-    </header>
-    <div id="wrapper">
-      <section id="founders">
-         <img src="img/mashed_founders.jpg" alt="Louisville Mashed Founders">
-      </section>
-      <section id="about">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Louisville Mashed</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="charity.html">Charity</a></li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="contact.html">Contact</a></li>  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-6 pull-right hidden-xs">
+         <img src="img/mashed_founders.jpg" class="img-responsive img-rounded" id="founders" alt="Louisville Mashed Founders">
+      </div>
+
+      <div class="col-sm-6" id="about">
+        <h2 id="pghead">What is Louisville Mashed?</h2>
         <p>In early 2015, a group of young Louisvillians asked themselves a simple question.</p>
-        <p id="question">How can we get more young people interested in the spirit we all love, bourbon?</p>  
+
+        <p id="question">"How can we get more young people interested in the spirit we all love: bourbon?"</p>  
         <p>From this humble query, Louisville Mashed was born.</p>  
         <p>Our vision for the event is to create a premier bourbon tasting experience with three goals: </p>
           <ol id="goals">
-            <li>Help young professionals develop a deeper appreciation and understanding of Kentucky Straight Bourbon Whisky</li>
-            <li>Network with young up and coming leaders in Louisville</li>
-            <li>Give back to our community</li>
+            <li>Help young professionals develop a deeper appreciation and understanding of Kentucky Straight Bourbon Whiskey;</li>
+            <li>Network with up-and-coming leaders in Louisville;</li>
+            <li>Give back to our community.</li>
           </ol>
-        <p>This annual event will unite all of these into one fun night.</p>  
+        <p>This annual event will unite each of the goals into one fun night.</p>  
         <p>Cheers!</p>
         <p>- The Louisville Mashed Committee</p>
-      </section>
+      </div>
+    </div>
 
-      <!--HIDE FAQ SECTION FOR NOW
->>>>>>> 
+    <!--Begin FAQ Section
+
       <section id="faq">
         <h2>FAQs</h2>
           <div class="tab-group">
@@ -136,13 +151,17 @@
             </div>
           </div>
       </section>
-<<<<<<< HEAD
+
 END FAQ SECTION-->
+
     </div>
-    <footer>
-      <p>&copy; 2015 Louisville Mashed</p>
-      <p>Website Design by <a class="shannon" href="http://www.shannonsiders.com" target="_blank">Shannon Siders.</a></p>
-    </footer>
+    <footer class="text-muted">
+        <p>&copy; 2015 Louisville Mashed</p>
+        <p>Website Design by <a class="shannon" href="http://www.shannonsiders.com" target="_blank">Shannon Siders.</a></p>
+      </footer>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 
 
